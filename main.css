@@ -1,0 +1,75 @@
+/* CSS based on https://codepen.io/Sunil_chatterji/pen/LEKova */
+
+/* fonts imported from Google:
+font-family: 'Lobster Two', cursive
+font-family: 'Caveat', cursive;
+font-family: 'Dancing Script', cursive; */
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Dancing+Script:wght@500&family=Lobster+Two&display=block");
+
+body {
+  font-family: "Caveat", cursive;
+  background: #111;
+  color: coral;
+  display: block;
+  font-size: 32px;
+  text-align: center;
+  /* Set "position" and "z-index" so entire page's body is in front of the background animation.
+  !  These need inherited by all classes inside the body to work  ! */
+  position: relative;
+  z-index: 1;
+}
+
+h1 {
+  font-family: "Lobster Two", cursive;
+  display: block;
+  text-align: center;
+  font-size: 150px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  white-space: nowrap;
+  position: inherit;
+  z-index: inherit;
+}
+
+hr {
+  text-align: center;
+  max-width: 1000px;
+  position: inherit;
+  z-index: inherit;
+}
+
+div {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  max-width: 900px;
+  padding: 0 1ch;
+  background: transparent;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  position: inherit;
+  z-index: inherit;
+}
+
+.sig {
+  text-align: right;
+  font-family: "Dancing Script", cursive;
+  font-size: 36px;
+}
+
+/* adjust all font sizes for phone screens */
+@media screen and (max-width: 900px) {
+  body {
+    font-size: 28px;
+  }
+
+  h1 {
+    font-size: 16vw;
+  }
+
+  .sig {
+    font-size: 32px;
+  }
+}
